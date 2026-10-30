@@ -20,5 +20,28 @@ int main()
     printf("\nPlease enter your choice (1-5): ");
     scanf("%d", &choice);
 
+    //use the switch case to determine the selected item
+    switch(choice)
+    {
+        case 1:
+            printf("\nYou have selected Chips - Kes 150 \n your order will be ready in 5 minutes");
+            break;
+        case 2:
+            printf("\nYou have selected Burger - Kes 250 \n your order will be ready in 10 minutes");
+            break;
+        case 3:
+            printf("\nYou have selected Pizza - Kes 500 \n your order will be ready in 15 minutes");
+            break;
+        case 4:
+            printf("\nYou have selected Soda - Kes 100 \n your order will be ready in 5 minutes");
+            break;
+        case 5:
+            printf("\nYou have selected Rice - Kes 200 \n your order will be ready in 10 minutes");
+            break;
+        default: //handles choices equal to 0 or greater than 5
+            printf("\nInvalid choice. Please select a valid option (1-5).");
+        break;
+    }
+
     return 0;
 }
